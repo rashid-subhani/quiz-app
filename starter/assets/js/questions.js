@@ -26,12 +26,4 @@ let questions = [
         options:["Java","C++","Python","TypeScript"],
         correctAnswer: "Python"
     }
-]
-
-
-
-
-
-
-Answer:
-3. 
+];
