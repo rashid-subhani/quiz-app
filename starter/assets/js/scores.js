@@ -1,2 +1,2 @@
 let score = localStorage.getItem("highscores");
-document.getElementById("highscores").innerHTML = score
+document.getElementById("highscores").innerHTML = score;

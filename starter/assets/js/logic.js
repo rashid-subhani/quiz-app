@@ -49,6 +49,7 @@ const finalScoreElement = document.getElementById("final-score");
 const initialsInput = document.getElementById("initials");
 const submitButton = document.getElementById("submit");
 
+
 // Landing page:
 // Explanation of the quiz
 // Start button
@@ -151,5 +152,13 @@ function endQuiz() {
 // High scores are listed, sorted highest to lowest
 // User has option to take the quiz again
 function saveScore(){
-  // const initials = 
+  const initials = initialsInput.value.toUpperCase();
+  if(initials.trim() !== ""){
+    const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    highScores.push({initials, score});
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+
+    // Redirect to high scores page
+    window.location.href = "highscores.html";
+  }
 }
