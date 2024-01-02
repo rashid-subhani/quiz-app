@@ -36,7 +36,7 @@ let score = 0;
         correctAnswer: "Python"
     }
 ]
-
+// Then Initialized variables
 const startButton = document.getElementById("start");
 const questionTitle = document.getElementById("question-title");
 const questionsEl = document.getElementById("questions");
